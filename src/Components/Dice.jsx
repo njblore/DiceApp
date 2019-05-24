@@ -15,7 +15,9 @@ class Dice extends Component {
     return (
       <div className="die-container">
         {this.state.value && (
-          <div className="die-face">{this.createGrid(faceGrid)}</div>
+          <div className="die-face" style={{ background: this.props.colour }}>
+            {this.createGrid(faceGrid)}
+          </div>
         )}
       </div>
     );
